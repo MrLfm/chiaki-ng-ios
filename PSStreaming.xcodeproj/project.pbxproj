@@ -1,0 +1,741 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		837CD8E62EF13F3A00B8A235 /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 837CD8E52EF13F3A00B8A235 /* VideoToolbox.framework */; };
+		837CD8E82EF13F6C00B8A235 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 837CD8E72EF13F6C00B8A235 /* CoreMedia.framework */; };
+		837CD8EA2EF13F9800B8A235 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 837CD8E92EF13F9800B8A235 /* CoreVideo.framework */; };
+		837CD8EB2EF140B600B8A235 /* libbz2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = ED81C33E2D880971007262F4 /* libbz2.tbd */; };
+		837CD8EC2EF140C700B8A235 /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = ED81C33C2D880966007262F4 /* libiconv.tbd */; };
+		837CD8ED2EF140DC00B8A235 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = ED81C33A2D880952007262F4 /* libz.tbd */; };
+		ED81C33B2D88095E007262F4 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = ED81C33A2D880952007262F4 /* libz.tbd */; };
+		ED81C33D2D880969007262F4 /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = ED81C33C2D880966007262F4 /* libiconv.tbd */; };
+		ED81C33F2D880974007262F4 /* libbz2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = ED81C33E2D880971007262F4 /* libbz2.tbd */; };
+		EDCBA15A2D87EED600040775 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDCBA1592D87EED600040775 /* AudioToolbox.framework */; };
+		EDCBA15C2D87EEDF00040775 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDCBA15B2D87EEDF00040775 /* AVFoundation.framework */; };
+		EDCBA15E2D87EEEC00040775 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDCBA15D2D87EEEC00040775 /* CoreGraphics.framework */; };
+		EDCBA1602D87EEF300040775 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDCBA15F2D87EEF300040775 /* CoreMedia.framework */; };
+		EDCBA1622D87EEFC00040775 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDCBA1612D87EEFC00040775 /* CoreVideo.framework */; };
+		EDCBA16C2D87EF4B00040775 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDCBA16B2D87EF4B00040775 /* Security.framework */; };
+		EDCBA16E2D87EF5200040775 /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDCBA16D2D87EF5200040775 /* VideoToolbox.framework */; };
+		EDD787672D8D0E5500AC8738 /* CoreHaptics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDD787662D8D0E5500AC8738 /* CoreHaptics.framework */; };
+		EDD787692D8D0E5D00AC8738 /* GameController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDD787682D8D0E5D00AC8738 /* GameController.framework */; };
+		EDD7876B2D8D0E8B00AC8738 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDD7876A2D8D0E8B00AC8738 /* QuartzCore.framework */; };
+		EDD7876D2D8D0E9A00AC8738 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDD7876C2D8D0E9A00AC8738 /* OpenGLES.framework */; };
+		EDD7876F2D8D0EA400AC8738 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDD7876E2D8D0EA400AC8738 /* CoreMotion.framework */; };
+		EDD787712D8D0EAE00AC8738 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDD787702D8D0EAE00AC8738 /* CoreAudio.framework */; };
+		EDD787732D8D0EBA00AC8738 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDD787722D8D0EBA00AC8738 /* CoreBluetooth.framework */; };
+		EDD787752D8D0ED200AC8738 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDD787742D8D0ED200AC8738 /* UIKit.framework */; };
+		EDD787772D8D0EDB00AC8738 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDD787762D8D0EDB00AC8738 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		ED81C7DB2D880C60007262F4 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		837CD8E52EF13F3A00B8A235 /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
+		837CD8E72EF13F6C00B8A235 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		837CD8E92EF13F9800B8A235 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		ED81C33A2D880952007262F4 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		ED81C33C2D880966007262F4 /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
+		ED81C33E2D880971007262F4 /* libbz2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libbz2.tbd; path = usr/lib/libbz2.tbd; sourceTree = SDKROOT; };
+		ED81C5F72D880B1B007262F4 /* PSStreamingDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PSStreamingDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EDCB9EB42D87DF5000040775 /* PSStreaming.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PSStreaming.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EDCBA1592D87EED600040775 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.1.sdk/System/Library/Frameworks/AudioToolbox.framework; sourceTree = DEVELOPER_DIR; };
+		EDCBA15B2D87EEDF00040775 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.1.sdk/System/Library/Frameworks/AVFoundation.framework; sourceTree = DEVELOPER_DIR; };
+		EDCBA15D2D87EEEC00040775 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.1.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		EDCBA15F2D87EEF300040775 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.1.sdk/System/Library/Frameworks/CoreMedia.framework; sourceTree = DEVELOPER_DIR; };
+		EDCBA1612D87EEFC00040775 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.1.sdk/System/Library/Frameworks/CoreVideo.framework; sourceTree = DEVELOPER_DIR; };
+		EDCBA1672D87EF1700040775 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.1.sdk/usr/lib/libz.tbd; sourceTree = DEVELOPER_DIR; };
+		EDCBA1692D87EF2500040775 /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.1.sdk/usr/lib/libiconv.tbd; sourceTree = DEVELOPER_DIR; };
+		EDCBA16A2D87EF4100040775 /* libbz2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libbz2.tbd; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.1.sdk/usr/lib/libbz2.tbd; sourceTree = DEVELOPER_DIR; };
+		EDCBA16B2D87EF4B00040775 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.1.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
+		EDCBA16D2D87EF5200040775 /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.1.sdk/System/Library/Frameworks/VideoToolbox.framework; sourceTree = DEVELOPER_DIR; };
+		EDD787662D8D0E5500AC8738 /* CoreHaptics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreHaptics.framework; path = System/Library/Frameworks/CoreHaptics.framework; sourceTree = SDKROOT; };
+		EDD787682D8D0E5D00AC8738 /* GameController.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameController.framework; path = System/Library/Frameworks/GameController.framework; sourceTree = SDKROOT; };
+		EDD7876A2D8D0E8B00AC8738 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		EDD7876C2D8D0E9A00AC8738 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		EDD7876E2D8D0EA400AC8738 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		EDD787702D8D0EAE00AC8738 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		EDD787722D8D0EBA00AC8738 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		EDD787742D8D0ED200AC8738 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		EDD787762D8D0EDB00AC8738 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		ED81C60D2D880B1D007262F4 /* Exceptions for "PSStreamingDemo" folder in "PSStreamingDemo" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = ED81C5F62D880B1B007262F4 /* PSStreamingDemo */;
+		};
+		ED98ECC62D94F674008CF5A4 /* Exceptions for "PSStreaming" folder in "PSStreamingDemo" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				chiaking/lib/json_c.framework,
+				chiaking/lib/OpenSSL.framework,
+			);
+			target = ED81C5F62D880B1B007262F4 /* PSStreamingDemo */;
+		};
+		EDCB9EB92D87DF5000040775 /* Exceptions for "PSStreaming" folder in "PSStreaming" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Tools/IPAddress.h,
+			);
+			publicHeaders = (
+				PSCommon.h,
+				PSStreaming.h,
+				PSStreamingSDK.h,
+			);
+			target = EDCB9EB32D87DF5000040775 /* PSStreaming */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
+		837CE5232EF1563F00B8A235 /* Exceptions for "PSStreamingDemo" folder in "Embed Frameworks" phase from "PSStreamingDemo" target */ = {
+			isa = PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet;
+			attributesByRelativePath = {
+				PSStreaming.framework = (CodeSignOnCopy, RemoveHeadersOnCopy, );
+			};
+			buildPhase = ED81C7DB2D880C60007262F4 /* Embed Frameworks */;
+			membershipExceptions = (
+				PSStreaming.framework,
+			);
+		};
+		837CE5282EF1566D00B8A235 /* Exceptions for "PSStreaming" folder in "Embed Frameworks" phase from "PSStreamingDemo" target */ = {
+			isa = PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet;
+			attributesByRelativePath = {
+				chiaking/lib/OpenSSL.framework = (CodeSignOnCopy, RemoveHeadersOnCopy, );
+				chiaking/lib/json_c.framework = (CodeSignOnCopy, RemoveHeadersOnCopy, );
+			};
+			buildPhase = ED81C7DB2D880C60007262F4 /* Embed Frameworks */;
+			membershipExceptions = (
+				chiaking/lib/json_c.framework,
+				chiaking/lib/OpenSSL.framework,
+			);
+		};
+/* End PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		ED81C5F82D880B1B007262F4 /* PSStreamingDemo */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				ED81C60D2D880B1D007262F4 /* Exceptions for "PSStreamingDemo" folder in "PSStreamingDemo" target */,
+				837CE5232EF1563F00B8A235 /* Exceptions for "PSStreamingDemo" folder in "Embed Frameworks" phase from "PSStreamingDemo" target */,
+			);
+			path = PSStreamingDemo;
+			sourceTree = "<group>";
+		};
+		EDCB9EB62D87DF5000040775 /* PSStreaming */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				EDCB9EB92D87DF5000040775 /* Exceptions for "PSStreaming" folder in "PSStreaming" target */,
+				ED98ECC62D94F674008CF5A4 /* Exceptions for "PSStreaming" folder in "PSStreamingDemo" target */,
+				837CE5282EF1566D00B8A235 /* Exceptions for "PSStreaming" folder in "Embed Frameworks" phase from "PSStreamingDemo" target */,
+			);
+			path = PSStreaming;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ED81C5F42D880B1B007262F4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				837CD8ED2EF140DC00B8A235 /* libz.tbd in Frameworks */,
+				837CD8E62EF13F3A00B8A235 /* VideoToolbox.framework in Frameworks */,
+				837CD8E82EF13F6C00B8A235 /* CoreMedia.framework in Frameworks */,
+				837CD8EC2EF140C700B8A235 /* libiconv.tbd in Frameworks */,
+				837CD8EB2EF140B600B8A235 /* libbz2.tbd in Frameworks */,
+				837CD8EA2EF13F9800B8A235 /* CoreVideo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDCB9EB12D87DF5000040775 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDCBA16C2D87EF4B00040775 /* Security.framework in Frameworks */,
+				EDCBA1602D87EEF300040775 /* CoreMedia.framework in Frameworks */,
+				ED81C33B2D88095E007262F4 /* libz.tbd in Frameworks */,
+				ED81C33F2D880974007262F4 /* libbz2.tbd in Frameworks */,
+				ED81C33D2D880969007262F4 /* libiconv.tbd in Frameworks */,
+				EDD787772D8D0EDB00AC8738 /* Foundation.framework in Frameworks */,
+				EDD7876D2D8D0E9A00AC8738 /* OpenGLES.framework in Frameworks */,
+				EDD7876F2D8D0EA400AC8738 /* CoreMotion.framework in Frameworks */,
+				EDCBA15C2D87EEDF00040775 /* AVFoundation.framework in Frameworks */,
+				EDD787712D8D0EAE00AC8738 /* CoreAudio.framework in Frameworks */,
+				EDD787752D8D0ED200AC8738 /* UIKit.framework in Frameworks */,
+				EDD7876B2D8D0E8B00AC8738 /* QuartzCore.framework in Frameworks */,
+				EDD787732D8D0EBA00AC8738 /* CoreBluetooth.framework in Frameworks */,
+				EDD787672D8D0E5500AC8738 /* CoreHaptics.framework in Frameworks */,
+				EDD787692D8D0E5D00AC8738 /* GameController.framework in Frameworks */,
+				EDCBA16E2D87EF5200040775 /* VideoToolbox.framework in Frameworks */,
+				EDCBA15E2D87EEEC00040775 /* CoreGraphics.framework in Frameworks */,
+				EDCBA15A2D87EED600040775 /* AudioToolbox.framework in Frameworks */,
+				EDCBA1622D87EEFC00040775 /* CoreVideo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EDCB9EAA2D87DF5000040775 = {
+			isa = PBXGroup;
+			children = (
+				EDCB9EB62D87DF5000040775 /* PSStreaming */,
+				ED81C5F82D880B1B007262F4 /* PSStreamingDemo */,
+				EDCBA1582D87EED600040775 /* Frameworks */,
+				EDCB9EB52D87DF5000040775 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EDCB9EB52D87DF5000040775 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EDCB9EB42D87DF5000040775 /* PSStreaming.framework */,
+				ED81C5F72D880B1B007262F4 /* PSStreamingDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EDCBA1582D87EED600040775 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				837CD8E92EF13F9800B8A235 /* CoreVideo.framework */,
+				837CD8E72EF13F6C00B8A235 /* CoreMedia.framework */,
+				837CD8E52EF13F3A00B8A235 /* VideoToolbox.framework */,
+				EDD787762D8D0EDB00AC8738 /* Foundation.framework */,
+				EDD787742D8D0ED200AC8738 /* UIKit.framework */,
+				EDD787722D8D0EBA00AC8738 /* CoreBluetooth.framework */,
+				EDD787702D8D0EAE00AC8738 /* CoreAudio.framework */,
+				EDD7876E2D8D0EA400AC8738 /* CoreMotion.framework */,
+				EDD7876C2D8D0E9A00AC8738 /* OpenGLES.framework */,
+				EDD7876A2D8D0E8B00AC8738 /* QuartzCore.framework */,
+				EDD787682D8D0E5D00AC8738 /* GameController.framework */,
+				EDD787662D8D0E5500AC8738 /* CoreHaptics.framework */,
+				ED81C33E2D880971007262F4 /* libbz2.tbd */,
+				ED81C33C2D880966007262F4 /* libiconv.tbd */,
+				ED81C33A2D880952007262F4 /* libz.tbd */,
+				EDCBA16D2D87EF5200040775 /* VideoToolbox.framework */,
+				EDCBA16B2D87EF4B00040775 /* Security.framework */,
+				EDCBA16A2D87EF4100040775 /* libbz2.tbd */,
+				EDCBA1692D87EF2500040775 /* libiconv.tbd */,
+				EDCBA1672D87EF1700040775 /* libz.tbd */,
+				EDCBA1612D87EEFC00040775 /* CoreVideo.framework */,
+				EDCBA15F2D87EEF300040775 /* CoreMedia.framework */,
+				EDCBA15D2D87EEEC00040775 /* CoreGraphics.framework */,
+				EDCBA15B2D87EEDF00040775 /* AVFoundation.framework */,
+				EDCBA1592D87EED600040775 /* AudioToolbox.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		EDCB9EAF2D87DF5000040775 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		ED81C5F62D880B1B007262F4 /* PSStreamingDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ED81C60E2D880B1D007262F4 /* Build configuration list for PBXNativeTarget "PSStreamingDemo" */;
+			buildPhases = (
+				ED81C5F32D880B1B007262F4 /* Sources */,
+				ED81C5F42D880B1B007262F4 /* Frameworks */,
+				ED81C5F52D880B1B007262F4 /* Resources */,
+				ED81C7DB2D880C60007262F4 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				ED81C5F82D880B1B007262F4 /* PSStreamingDemo */,
+			);
+			name = PSStreamingDemo;
+			packageProductDependencies = (
+			);
+			productName = PSStreamingDemo;
+			productReference = ED81C5F72D880B1B007262F4 /* PSStreamingDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EDCB9EB32D87DF5000040775 /* PSStreaming */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EDCB9EBA2D87DF5000040775 /* Build configuration list for PBXNativeTarget "PSStreaming" */;
+			buildPhases = (
+				EDCB9EAF2D87DF5000040775 /* Headers */,
+				EDCB9EB02D87DF5000040775 /* Sources */,
+				EDCB9EB12D87DF5000040775 /* Frameworks */,
+				EDCB9EB22D87DF5000040775 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				EDCB9EB62D87DF5000040775 /* PSStreaming */,
+			);
+			name = PSStreaming;
+			packageProductDependencies = (
+			);
+			productName = PSStreaming;
+			productReference = EDCB9EB42D87DF5000040775 /* PSStreaming.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EDCB9EAB2D87DF5000040775 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1610;
+				TargetAttributes = {
+					ED81C5F62D880B1B007262F4 = {
+						CreatedOnToolsVersion = 16.1;
+					};
+					EDCB9EB32D87DF5000040775 = {
+						CreatedOnToolsVersion = 16.1;
+					};
+				};
+			};
+			buildConfigurationList = EDCB9EAE2D87DF5000040775 /* Build configuration list for PBXProject "PSStreaming" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EDCB9EAA2D87DF5000040775;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = EDCB9EB52D87DF5000040775 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EDCB9EB32D87DF5000040775 /* PSStreaming */,
+				ED81C5F62D880B1B007262F4 /* PSStreamingDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ED81C5F52D880B1B007262F4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDCB9EB22D87DF5000040775 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ED81C5F32D880B1B007262F4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDCB9EB02D87DF5000040775 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		ED81C60F2D880B1D007262F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2V8DDU6RFC;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/PSStreamingDemo",
+					"$(PROJECT_DIR)/PSStreaming/chiaking/lib",
+					"$(PROJECT_DIR)/PSStreamingDemo/SDK",
+					"$(PROJECT_DIR)/PSStreamingDemo/SDK/lib",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = $PROJECT_DIR/PSStreaming/chiaking;
+				INFOPLIST_FILE = PSStreamingDemo/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "PS串流Demo";
+				INFOPLIST_KEY_LSSupportsOpeningDocumentsInPlace = YES;
+				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "该应用需要访问本地网络，以便与设备进行通信。";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/PSStreaming/chiaking/lib/ffmpeg",
+					"$(PROJECT_DIR)/PSStreaming/chiaking/lib",
+					"$(PROJECT_DIR)/PSStreamingDemo/SDK/ffmpeg",
+					"$(PROJECT_DIR)/PSStreamingDemo/SDK/lib",
+					"$(PROJECT_DIR)/PSStreamingDemo/SDK/lib/ffmpeg",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = "-lc++";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fm.PSStreamingDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		ED81C6102D880B1D007262F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2V8DDU6RFC;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/PSStreamingDemo",
+					"$(PROJECT_DIR)/PSStreaming/chiaking/lib",
+					"$(PROJECT_DIR)/PSStreamingDemo/SDK",
+					"$(PROJECT_DIR)/PSStreamingDemo/SDK/lib",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = $PROJECT_DIR/PSStreaming/chiaking;
+				INFOPLIST_FILE = PSStreamingDemo/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "PS串流Demo";
+				INFOPLIST_KEY_LSSupportsOpeningDocumentsInPlace = YES;
+				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "该应用需要访问本地网络，以便与设备进行通信。";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/PSStreaming/chiaking/lib/ffmpeg",
+					"$(PROJECT_DIR)/PSStreaming/chiaking/lib",
+					"$(PROJECT_DIR)/PSStreamingDemo/SDK/ffmpeg",
+					"$(PROJECT_DIR)/PSStreamingDemo/SDK/lib",
+					"$(PROJECT_DIR)/PSStreamingDemo/SDK/lib/ffmpeg",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = "-lc++";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fm.PSStreamingDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		EDCB9EBB2D87DF5000040775 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CONFIGURATION_BUILD_DIR = $SRCROOT/PSStreamingDemo;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 2V8DDU6RFC;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/PSStreaming/chiaking/lib",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+					"PS_STREAMING_SDK=1",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = $PROJECT_DIR/PSStreaming/chiaking;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/PSStreaming/chiaking/lib",
+					"$(PROJECT_DIR)/PSStreaming/chiaking/lib/ffmpeg",
+				);
+				MACH_O_TYPE = mh_dylib;
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				OTHER_LDFLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fm.PSStreaming;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EDCB9EBC2D87DF5000040775 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CONFIGURATION_BUILD_DIR = $SRCROOT/PSStreamingDemo;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 2V8DDU6RFC;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/PSStreaming/chiaking/lib",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = "PS_STREAMING_SDK=1";
+				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = $PROJECT_DIR/PSStreaming/chiaking;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/PSStreaming/chiaking/lib",
+					"$(PROJECT_DIR)/PSStreaming/chiaking/lib/ffmpeg",
+				);
+				MACH_O_TYPE = mh_dylib;
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				OTHER_LDFLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fm.PSStreaming;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		EDCB9EBD2D87DF5000040775 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		EDCB9EBE2D87DF5000040775 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ED81C60E2D880B1D007262F4 /* Build configuration list for PBXNativeTarget "PSStreamingDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED81C60F2D880B1D007262F4 /* Debug */,
+				ED81C6102D880B1D007262F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EDCB9EAE2D87DF5000040775 /* Build configuration list for PBXProject "PSStreaming" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EDCB9EBD2D87DF5000040775 /* Debug */,
+				EDCB9EBE2D87DF5000040775 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EDCB9EBA2D87DF5000040775 /* Build configuration list for PBXNativeTarget "PSStreaming" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EDCB9EBB2D87DF5000040775 /* Debug */,
+				EDCB9EBC2D87DF5000040775 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EDCB9EAB2D87DF5000040775 /* Project object */;
+}
